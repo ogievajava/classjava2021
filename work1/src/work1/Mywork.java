@@ -6,7 +6,7 @@ public class Mywork {
 
 	public static void main(String[] args) {
 
-		while (true) {
+	
 			// scope #6
 			Scanner reader = new Scanner(System.in);
 			System.out.println("Tell me your user name:");
@@ -47,12 +47,14 @@ public class Mywork {
 				System.out.println("Your discount is: " + "0%");
 				System.out.println("Your total discout is: " + "0");
 				System.out.println("Your should pay (with the discount): " + userBuy + "\n");
+				System.out.println(userName + ", please try to register as a vip on our oficial website: " + "\n");
+				System.out.println("Thank you");
 			}
 
 			// I am closing the while so also the while scope
 		}
 
-	}
+	
 
 	public static void methodToTestScope() {
 		// scope number #5
