@@ -6,17 +6,20 @@ public class Mywork {
 
 	public static void main(String[] args) {
 
-   System.out.println("How are you?");
-   System.out.println("Answer when you can ");
-	}
-	Scanner reader = new Scanner (System.in);
+			System.out.println("How are you?");
+			System.out.println("Answer when you can ");
 	
-	{
-		Scanner name; 
-		 name = new Scanner (System.in); 
-		 if (name.equals("James")) {
+	
+		Scanner name = new Scanner (System.in);
+		
+		String namecon = name.nextLine();
+		
+		
+		if (namecon.equals("James"))
+		{
+			System.out.println(namecon + "Answer when you can "); 
 		 }
-		System.out.println(name + "Answer when you can ");
+		
 	}
 	
 }
