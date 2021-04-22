@@ -8,16 +8,16 @@ public class school {
 		// TODO Auto-generated method stub
 		
 		Scanner reader = new Scanner (System.in);
-		System.out.println("Tell me your user name:");
+		System.out.println("Tamamwen Eni we?:");
 		String userName = reader.nextLine();
 
-		System.out.println("Tell me your type of user:");
+		System.out.println("Ukpo nu ye?:");
 		String userType = reader.nextLine();
 
-		System.out.println("Tell me the amount of your buy:");
+		System.out.println("Inuigho uh mwen?:");
 		int userBuy = reader.nextInt();
 		
-		System.out.println("Do you like it product? true or false:");
+		System.out.println("We ruemwen eki na raa? True or false:");
 		boolean userOpinion = reader.nextBoolean();
 			
 		
