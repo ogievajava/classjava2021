@@ -6,51 +6,46 @@ public class Mywork {
 
 	public static void main(String[] args) {
 
-	
+			int discount = 0;
+			int totalDiscount = 0;
+			int amountTopay = 0;
 			// scope #6
 			Scanner reader = new Scanner(System.in);
-			System.out.println("Tell me your user name:");
-			String userName = reader.nextLine();
+			System.out.println("Tell me your client name:");
+			String clientName = reader.nextLine();
 
-			System.out.println("Tell me your type of user:");
-			String userType = reader.nextLine();
+			System.out.println("Tell me your type of client:");
+			String clientType = reader.nextLine();
 
 			System.out.println("Tell me the amount of your buy:");
-			int userBuy = reader.nextInt();
-
-			System.out.println("\nUser:");
-			System.out.println("-------------------------\n");
-			System.out.println("User Name: " + userName);
-			System.out.println("User Type: " + userType);
-			System.out.println("User Buy: " + userBuy);
-
-			if (userType.equals("vip")) {
-				// scope number #3
-
-				// i have to code 25% discount
-				// and print it to screen
-				System.out.println("\nTicket:");
-				System.out.println("-------------------------\n");
-				System.out.println(userName + " is a vip user\n");
-				System.out.println("The amount of your buy is: " + userBuy);
-				System.out.println("Your discount is: " + "25%");
-				System.out.println("Your total discout is: " + (userBuy * 25 / 100));
-				System.out.println("You should pay (with the discount): " + (userBuy - (userBuy * 25 / 100)) + "\n");
-
-			} else {
-				// scope number #4
-
-				System.out.println("\nTicket:");
-				System.out.println("-------------------------\n");
-				System.out.println(userName + " is NOT a vip user\n");
-				System.out.println("The amount of your buy is: " + userBuy);
-				System.out.println("Your discount is: " + "0%");
-				System.out.println("Your total discout is: " + "0");
-				System.out.println("Your should pay (with the discount): " + userBuy + "\n");
-				System.out.println(userName + ", please try to register as a vip on our oficial website: " + "\n");
-				System.out.println("Thank you");
+			int clientBuy = reader.nextInt();
+			
+			if (clientType.equals("vip")) {
+			discount = 25;
+			totalDiscount = clientBuy * 25/100;
+			amountTopay = clientBuy - totalDiscount;
+			
+			}else if (clientType.equals("Regular")) {
+			discount = 15;
+			
+			}else if (clientType.equals("New")) {
+			discount = 0;
+				
+			}else {
+				System.out.println("Hello " + clientName + ", YOU ARE NOT A REGISTERED MEMBER");
 			}
-
+			
+			
+			System.out.println("\nclient:");
+			System.out.println("-------------------------\n");
+			System.out.println("client Name: " + clientName);
+			System.out.println("client Type: " + clientType);
+			System.out.println("client Buy: " + clientBuy);
+			System.out.println("Your discout is: " + discount);
+			System.out.println("Your total discout is: " + totalDiscount);
+			System.out.println("You have to pay : " + amountTopay + "\n");
+			
+				
 			// I am closing the while so also the while scope
 		}
 
@@ -59,7 +54,7 @@ public class Mywork {
 	public static void methodToTestScope() {
 		// scope number #5
 		// here i don't see variables from other scopes
-		// userName <<<< i don't see this variable from scope #2
+		// clientName <<<< i don't see this variable from scope #2
 		// reader <<<< i don't see this variable from scope #2
 
 	}
