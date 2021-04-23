@@ -3,6 +3,10 @@ package work1;
 import java.util.Scanner;
 
 public class Mywork {
+	
+	public static void welcomeClient() {
+		
+	}
 
 	public static void main(String[] args) {
 
@@ -65,4 +69,13 @@ public class Mywork {
 		System.out.println("You have to pay : " + amountTopay + "\n");
 		System.out.println("  " +  "\n");
 	} 
+
+	public static void addTax() {
+	
+	}
+	
+	public static void ExitAccount() {
+		
+	}
+	
 }
