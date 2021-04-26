@@ -59,11 +59,11 @@ public class Operations {
 			linebreak();
 			int sizeOfWordsIntroduce = wordtoPrint.length();
 			while (i < sizeOfWordsIntroduce) {
-				print("  " );
 				
+				print("  " );
 				print(wordtoPrint.charAt(i));
-			
 				i++; // i = i +1;
+				linebreak();
 
 			}
 	}
@@ -74,8 +74,24 @@ public class Operations {
 			linebreak();
 			int sizeOfWordsIntroduce = wordtoPrint.length();
 			while (i < sizeOfWordsIntroduce) {
-				print((i + 1) + "  " );
 				
+				print((i + 1) + " = " );
+				print(wordtoPrint.charAt(i));
+			
+				i++; // i = i +1;
+				linebreak();
+			}
+	}
+		
+		
+		public static void printStringBend(String wordtoPrint) {
+
+			int i = 0;
+			linebreak();
+			int sizeOfWordsIntroduce = wordtoPrint.length();
+			while (i < sizeOfWordsIntroduce) {
+				
+				print(("  " ) + (i + (" - " )));
 				print(wordtoPrint.charAt(i));
 			
 				i++; // i = i +1;

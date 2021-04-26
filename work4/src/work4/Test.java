@@ -14,15 +14,23 @@ public class Test {
 			
 			Operations.print(word);
 			System.out.println("\n");
+			
 			Operations.linebreak();
 			Operations.printString(word);
 			System.out.println("\n");
+			
 			Operations.printStringH(word);
 			System.out.println("\n");
+			
 			Operations.printStringV(word);
 			System.out.println("\n");
+			
 			Operations.printStringGion(word);
 			System.out.println("\n");
+			
+			Operations.printStringBend(word);
+			System.out.println("\n");
+			
 			System.out.println("Bye bye my friend...");
 			
 			
