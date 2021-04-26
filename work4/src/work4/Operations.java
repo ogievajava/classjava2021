@@ -27,13 +27,16 @@ public class Operations {
 		int sizeWordtoPrint = wordtoPrint.length();
 		
 		while (i < sizeWordtoPrint) {
-			print("loop number: " + (i + 1) + " - " );
+			int j = 0;
+			while (j < i) {
+				print(" ");print(" ");
+				j++;
+			}
+				print(" ");print(" ");print(" ");
+				print(wordtoPrint.charAt(i));
+				linebreak();
 			
-			print("letter: " + wordtoPrint.charAt(i));
-			linebreak();
-
 			i++; // i = i +1;
-
 		}
 	}
 	
@@ -43,7 +46,7 @@ public class Operations {
 		
 			int sizeOfWordsIntroduce = wordtoPrint.length();
 			while (i < sizeOfWordsIntroduce) {
-				print("loop number: " + (i + 1) + "  " );
+				print((i + 1) + "  " );
 				
 				print(wordtoPrint.charAt(i));
 			
@@ -68,6 +71,27 @@ public class Operations {
 			}
 	}
 		
+		public static void printStringBend(String wordtoPrint) {
+
+			int i = 0;
+			linebreak();
+			int sizeWordtoPrint = wordtoPrint.length();
+
+			while (i < sizeWordtoPrint) {
+				
+				int j = 0;
+				while (j < i) {
+					print("*");
+					j++;
+				}
+				
+				print(wordtoPrint.charAt(i));
+				linebreak();
+				
+				i++; // i = i +1;
+			}
+		}
+		
 		public static void printStringGion(String wordtoPrint) {
 
 			int i = 0;
@@ -75,21 +99,20 @@ public class Operations {
 			int sizeOfWordsIntroduce = wordtoPrint.length();
 			while (i < sizeOfWordsIntroduce) {
 				
-				print((i + 1) + " = " );
+				print(" ");
 				print(wordtoPrint.charAt(i));
-			
+				
 				i++; // i = i +1;
 				linebreak();
 			}
 	}
 		
-		
-		public static void printStringBend(String wordtoPrint) {
+		public static void printStringRoundturn(String wordtoPrint) {
 
 			int i = 0;
 			linebreak();
 			int sizeWordtoPrint = wordtoPrint.length();
-
+			
 			while (i < sizeWordtoPrint) {
 				int j = 0;
 				while (j < i) {
@@ -101,6 +124,11 @@ public class Operations {
 				
 				i++; // i = i +1;
 			}
-	}
+
+			linebreak();
+			}
+		}
+	
+	
 		
-}
+
