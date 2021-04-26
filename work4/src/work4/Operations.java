@@ -88,14 +88,18 @@ public class Operations {
 
 			int i = 0;
 			linebreak();
-			int sizeOfWordsIntroduce = wordtoPrint.length();
-			while (i < sizeOfWordsIntroduce) {
-				
-				print(("  " ) + (i + (" - " )));
+			int sizeWordtoPrint = wordtoPrint.length();
+
+			while (i < sizeWordtoPrint) {
+				int j = 0;
+				while (j < i) {
+					print(" ");print(" ");
+					j++;
+				}
 				print(wordtoPrint.charAt(i));
-			
-				i++; // i = i +1;
 				linebreak();
+				
+				i++; // i = i +1;
 			}
 	}
 		
