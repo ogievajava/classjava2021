@@ -2,6 +2,7 @@ package wordsoperations;
 
 import java.util.Random;
 //import java.util.Scanner;
+import java.util.Scanner;
 
 public class AccountManagment {
 	// scope #3
@@ -17,10 +18,29 @@ public class AccountManagment {
 		String email = createEmail(userToCreateAccount);
 		String password = createPassword();
 		printUserAccount(user, email, password);
-	   
-		
 		
 	}
+	
+	
+//	public static String loginUserInfo () {
+//		
+//		Scanner reader = new Scanner(System.in);
+//		System.out.println("What is your First name?");
+//		String userFirstName = reader.nextLine();
+//		
+//		System.out.println("What is your Surname?");
+//		String userSecondName = reader.nextLine();
+//		
+//		System.out.println("What is your Email?");
+//		String userEmail = reader.nextLine();
+//		
+//		System.out.println("What is your Password?");
+//		String userPassword = reader.nextLine();
+//		
+//		return userFirstName;
+//				
+//	
+//	}
 
 	// ------------------------------------------------
 	// ----------- HARRAMIENTAS ----------------------
