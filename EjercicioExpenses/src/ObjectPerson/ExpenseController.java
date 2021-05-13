@@ -15,7 +15,9 @@ import java.util.Scanner;
 			expenses = new ArrayList<Expense>();
 	
 			while (true) {
-				Menu.expenseMenu();
+				
+				
+				
 				String command = reader.nextLine();
 	
 				if (command.equals("1")) {

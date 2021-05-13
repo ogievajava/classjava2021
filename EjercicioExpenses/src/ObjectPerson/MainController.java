@@ -19,7 +19,7 @@ public class MainController {
 		users.add(new User("Uma", "Thurman", "umathurman", "123qwe"));
 
 		while (true) {
-			Menu.mainMenu();
+			
 			String command = reader.nextLine();
 
 			if (command.equals("1")) {
