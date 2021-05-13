@@ -1,5 +1,5 @@
 package ObjectPerson;
 
-public class Expenses {
+public class Utils {
 
 }
