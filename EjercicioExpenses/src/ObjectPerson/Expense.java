@@ -7,13 +7,13 @@ public class Expense {
 	public Boolean isMensual;
 
 		public Expense() {
-			super();
+		
 		}
 		
 		
 	
 		public Expense(String title, double value, MyDate date, Boolean isMensual) {
-			super();
+	
 			this.title = title;
 			this.value = value;
 			this.date = date;
@@ -36,7 +36,7 @@ public class Expense {
 	
 	
 		public Expense(String title, double value, MyDate date) {
-			super();
+	
 			this.title = title;
 			this.value = value;
 			this.date = date;
@@ -45,12 +45,12 @@ public class Expense {
 	
 	
 		public Expense(double value) {
-			super();
+	
 			this.value = value;
 		}
 	
 		public Expense(String title, double value, Boolean isMensual) {
-			super();
+		
 			this.title = title;
 			this.value = value;
 			this.isMensual = isMensual;

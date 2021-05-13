@@ -1,9 +1,8 @@
 package ObjectPerson;
 
+import java.awt.Menu;
 import java.util.ArrayList;
 import java.util.Scanner;
-
-import view.*;
 
 public class MainController {
 
@@ -37,7 +36,7 @@ public class MainController {
 				users = UserDeleting.deleteUser(reader, users);
 
 			} else if (command.equals("5")) {
-				UserManagment.printAllUsers(users);
+				UserManagement.printAllUsers(users);
 
 			} else if (command.equals("0")) {
 				break;

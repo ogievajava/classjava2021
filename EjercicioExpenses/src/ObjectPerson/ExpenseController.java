@@ -1,9 +1,8 @@
 package ObjectPerson;
 
+import java.awt.Menu;
 import java.util.ArrayList;
 import java.util.Scanner;
-
-	import view.Menu;
 	
 	public class ExpenseController {
 	
