@@ -2,8 +2,12 @@ package ObjectPerson;
 
 public class Init {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		public static void main(String[] args) {
+
+			MainController.AppStarting();
+
+			System.out.println("\nBye, bye my friend...");
+		}
 
 	}
 
